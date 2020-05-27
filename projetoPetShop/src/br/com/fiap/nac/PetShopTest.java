@@ -13,7 +13,7 @@ public class PetShopTest {
 
 
         Animal animal = new Animal();
-        Cliente cliente = new Cliente();
+        PetShop petShop = new PetShop();
 
         //Cadastro
         int inicio;
@@ -43,17 +43,17 @@ public class PetShopTest {
 
                 switch (num) {
                     case 0:
-                        cliente.setTotalGasto(cliente.getTotalGasto() + 70);
+                        petShop.setTotalGasto(petShop.getTotalGasto() + 70);
                         break;
 
                     case 1:
                         String descricaoPorte = animal.getPorte();
                         if (descricaoPorte.equals("Porte Pequeno")) {
-                            cliente.setTotalGasto(cliente.getTotalGasto() + 40);
+                            petShop.setTotalGasto(petShop.getTotalGasto() + 40);
                         } else if (descricaoPorte.equals("Porte Médio")) {
-                            cliente.setTotalGasto(cliente.getTotalGasto() + 50);
+                            petShop.setTotalGasto(petShop.getTotalGasto() + 50);
                         } else if (descricaoPorte.equals("Porte Grande")) {
-                            cliente.setTotalGasto(cliente.getTotalGasto() + 60);
+                            petShop.setTotalGasto(petShop.getTotalGasto() + 60);
                         }
 
                         break;
@@ -61,15 +61,15 @@ public class PetShopTest {
                     case 2:
                         String descricaoTipo = animal.getTipo();
                         if (descricaoTipo.equals("Cachorro") || descricaoTipo.equals("Gato")) {
-                            cliente.setTotalGasto(cliente.getTotalGasto() + 100);
+                            petShop.setTotalGasto(petShop.getTotalGasto() + 100);
                         } else if (descricaoTipo.equals("Outro")) {
-                            cliente.setTotalGasto(cliente.getTotalGasto() + 150);
+                            petShop.setTotalGasto(petShop.getTotalGasto() + 150);
                         }
                         break;
                 }
 
             }else if(inicio == 3){
-                JOptionPane.showMessageDialog(null, "Valor total: R$" + cliente.getTotalGasto());
+                JOptionPane.showMessageDialog(null, "Valor total: R$" + petShop.getTotalGasto());
             }else{
                 JOptionPane.showMessageDialog(null, "Você não cadastrou nenhum animal!");
             }
