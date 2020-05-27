@@ -1,9 +1,9 @@
 package br.com.fiap.nac;
 
 public class Animal {
-    String nome;
-    String tipo;
-    String porte;
+    private String nome;
+    private String tipo;
+    private String porte;
 
     public String getNome() {
         return nome;
