@@ -26,12 +26,12 @@ public class PetShopTest {
                 JOptionPane.showMessageDialog(null, "O sistema será encerrado.");
             }else if(inicio == 1){
 
-                String nome = JOptionPane.showInputDialog("Digite o nome do seu Pet: ");
+                String nome = JOptionPane.showInputDialog("Digite o nome do Pet: ");
 
-                Integer porte = JOptionPane.showOptionDialog(null, "Qual o porte do seu Pet?",
+                Integer porte = JOptionPane.showOptionDialog(null, "Qual o porte deste Pet?",
                         "PetShop",0, JOptionPane.QUESTION_MESSAGE, null, porteAnimal, porteAnimal[0]);
 
-                Integer tipo = JOptionPane.showOptionDialog(null, "Qual o tipo do seu Pet?",
+                Integer tipo = JOptionPane.showOptionDialog(null, "Qual o tipo deste Pet?",
                         "PetShop",0, JOptionPane.QUESTION_MESSAGE, null, tipoAnimal, tipoAnimal[0]);
 
                 animal.cadastrarAnimal(nome, porte, tipo);

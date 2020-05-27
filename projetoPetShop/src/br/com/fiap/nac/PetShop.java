@@ -1,7 +1,7 @@
 package br.com.fiap.nac;
 
 public class PetShop {
-    float totalGasto;
+    float totalGasto; //soma dos serviços utilizados
     Animal animal = new Animal();
 
     public float getTotalGasto() {
