@@ -43,16 +43,20 @@ public class PetShopTest {
 
                 switch (num) {
                     case 0:
+                        JOptionPane.showMessageDialog(null, "Compra efetuada! R$: 70,00");
                         petShop.setTotalGasto(petShop.getTotalGasto() + 70);
                         break;
 
                     case 1:
                         String descricaoPorte = animal.getPorte();
                         if (descricaoPorte.equals("Porte Pequeno")) {
+                            JOptionPane.showMessageDialog(null, "Compra efetuada! R$: 40,00");
                             petShop.setTotalGasto(petShop.getTotalGasto() + 40);
                         } else if (descricaoPorte.equals("Porte Médio")) {
+                            JOptionPane.showMessageDialog(null, "Compra efetuada! R$: 50,00");
                             petShop.setTotalGasto(petShop.getTotalGasto() + 50);
                         } else if (descricaoPorte.equals("Porte Grande")) {
+                            JOptionPane.showMessageDialog(null, "Compra efetuada! R$: 60,00");
                             petShop.setTotalGasto(petShop.getTotalGasto() + 60);
                         }
 
@@ -61,8 +65,10 @@ public class PetShopTest {
                     case 2:
                         String descricaoTipo = animal.getTipo();
                         if (descricaoTipo.equals("Cachorro") || descricaoTipo.equals("Gato")) {
+                            JOptionPane.showMessageDialog(null, "Compra efetuada! R$: 100,00");
                             petShop.setTotalGasto(petShop.getTotalGasto() + 100);
                         } else if (descricaoTipo.equals("Outro")) {
+                            JOptionPane.showMessageDialog(null, "Compra efetuada! R$: 150,00");
                             petShop.setTotalGasto(petShop.getTotalGasto() + 150);
                         }
                         break;
